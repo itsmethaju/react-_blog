@@ -4,11 +4,14 @@ import Home from './Home';
 import About from './About';
 import Blog from './Blog';
 import Contacts from './Contact_page';
+import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
   return (
     <div>
- 
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -16,6 +19,8 @@ const App = () => {
         <Route path="/contact" element={<Contacts />} />
 
       </Routes>
+      <Footer />
+
     </div>
   );
 }
